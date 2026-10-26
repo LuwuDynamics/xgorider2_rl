@@ -1,0 +1,36 @@
+{
+  "name": "rider_balance_v6",
+  "trained": true,
+  "action_space": "wheels_legs",
+  "action_scale": 1023.0,
+  "leg_action_scale": 0.004999999888241291,
+  "contract": 6,
+  "architecture": [
+    18,
+    32,
+    32,
+    4
+  ],
+  "sha256": "2719c91c070968d03e164e76cf2c46a92f60d44e77e74337001939e36a8a6ff2",
+  "model_id": 656001308,
+  "parameters": 1796,
+  "parameter_bytes": 7184,
+  "normalization_bytes": 144,
+  "policy_period_us": 3000,
+  "inference_deadline_us": 2000,
+  "max_policy_gap_us": 30000,
+  "action_slew_units_per_second": 20000,
+  "leg_action_slew_units_per_second": 10,
+  "direct_wheel_reference_limits": {
+    "forward_mm_s": 165,
+    "turn_deg_s": 36,
+    "height_units": [
+      0,
+      29
+    ],
+    "roll_command_deg": 4
+  },
+  "yaw_integral_gain": 0.07999999821186066,
+  "yaw_integral_limit": 0.07999999821186066,
+  "on_device_profiled": false
+}

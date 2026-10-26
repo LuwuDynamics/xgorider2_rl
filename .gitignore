@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv-*/
+
+# PlatformIO and build products
+.pio/
+firmware/dist/
+firmware/tests/build/
+training/build/
+
+# Training runs (the shipped model lives in training/artifacts/balance-v6)
+training/runs/
+
+# OS / editor
+.DS_Store

@@ -1,0 +1,13 @@
+{
+  "source": "XGO-Rider2_Assembly_v2026.09.18.step (the robot's CAD assembly; not part of this repository)",
+  "grouping": {
+    "base": 255,
+    "leg12": 17,
+    "leg22": 17,
+    "wheel11": 10,
+    "wheel21": 10
+  },
+  "display_only": true,
+  "linear_deflection_m": 0.0003,
+  "angular_deflection_rad": 0.4
+}

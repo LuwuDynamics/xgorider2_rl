@@ -1,0 +1,9 @@
+# Build and flash (required)
+platformio==6.1.18
+pyserial==3.5
+# Host tests and trace tools
+numpy>=1.26
+scipy>=1.11
+# Optional: BLE test client, PyTorch cross-check of the exported actor
+# bleak>=0.22
+# torch>=2.2

@@ -1,0 +1,31 @@
+1
+00:00:00,130 --> 00:00:06,899
+Open hardware. Open software. Reinforcement learning on a stock ESP32.
+
+2
+00:00:07,330 --> 00:00:12,099
+Meet Rider2-RL. A wheeled robot for just over four hundred US dollars.
+
+3
+00:00:13,130 --> 00:00:19,053
+Train the balance policy in MuJoCo, on a laptop CPU. No GPU needed.
+
+4
+00:00:20,330 --> 00:00:25,945
+Just one thousand, seven hundred and ninety-six parameters. About seven kilobytes of weights.
+
+5
+00:00:26,530 --> 00:00:30,607
+Export to native C plus plus. No inference framework on the robot.
+
+6
+00:00:31,530 --> 00:00:34,299
+A lift guard suppresses wheel runaway when picked up.
+
+7
+00:00:36,730 --> 00:00:39,730
+Free-fall detection triggers a stop and releases servo torque.
+
+8
+00:00:42,530 --> 00:00:49,761
+Now open source on GitHub. Get the code, train your own policy, and build on ESP32.

@@ -1,0 +1,76 @@
+{
+  "period": 0.006,
+  "gains": {
+    "pitch": 2957.4309235329874,
+    "pitch_rate_fw": -146.68333166394157,
+    "wheel_speed": 3704.063336167679,
+    "position": 267.70158210053944
+  },
+  "cost": 0.36062198294689035,
+  "nominal_plant": {
+    "kt": 0.00015980734865261802,
+    "armature": 0.0,
+    "damping": 0.002,
+    "coulomb": 0.0,
+    "delay": 0.004,
+    "lag": 0.009,
+    "speed_scale": 0.3183098861837907,
+    "com_shift": 0.0,
+    "roll_resist": 0.0
+  },
+  "report": {
+    "nominal": {
+      "stable": true,
+      "growth": -0.26861855343002716,
+      "min_zeta": 0.5288895542211588
+    },
+    "gain x0.8": {
+      "stable": true,
+      "growth": -0.10201809570879075,
+      "min_zeta": 0.5573363084486465
+    },
+    "sensor 0.27": {
+      "stable": true,
+      "growth": -0.12191999951791681,
+      "min_zeta": 0.5410440361156088
+    },
+    "gain x2.0": {
+      "stable": true,
+      "growth": -0.5702487958884095,
+      "min_zeta": 0.3000044000830737
+    },
+    "delay +12ms": {
+      "stable": true,
+      "growth": -0.27315733750476207,
+      "min_zeta": 0.30000191258942177
+    },
+    "lag x2": {
+      "stable": true,
+      "growth": -0.27199369375851074,
+      "min_zeta": 0.44118669599748384
+    },
+    "sensor 0.40": {
+      "stable": true,
+      "growth": -0.5216791675789276,
+      "min_zeta": 0.43023896481048557
+    },
+    "margins": {
+      "nominal": {
+        "stable": true,
+        "growth": -0.26861855343002716,
+        "worst_hz": 0.0953075084690162,
+        "unstable_poles": [],
+        "min_zeta": 0.5288895542211588
+      },
+      "gain_up": 3.390652254658746,
+      "gain_down": 0.6995819704577799,
+      "delay_margin": 0.026000000000000002
+    },
+    "noise_std": {
+      "pitch_deg": 0.31299410731029154,
+      "speed_mm_s": 5.290074580715777,
+      "position_mm": 8.00837504302857,
+      "command_units": 26.187940092144718
+    }
+  }
+}

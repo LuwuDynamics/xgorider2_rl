@@ -1,0 +1,35 @@
+== policy: artifacts/balance-v6/actor.json
+   local gains: pitch 2267.2, rate -46.5, speed 5208.5, position 521.6, integral 92.4, fwd_ref -1620.4, yaw_rate 87.3, turn_ref -312.9, prev 0.000
+   measured-plant loop  f[Hz]  |Phi|  phase  |1-Phi|
+                           4.9   0.79      33   0.55
+                           6.4   0.61      32   0.58
+                           6.9   0.55      30   0.59
+                           7.5   0.47      26   0.61
+                           8.7   0.40      21   0.64
+                           9.8   0.38      18   0.65
+                          11.6   0.32      14   0.69
+                          13.9   0.26      -6   0.74
+   sensitivity peak on measured plant: 1.83   max |Phi| above 8 Hz: 0.40
+   model: nominal stable True min zeta 0.55 | gain margin up x3.61 down x0.51 | delay margin 58 ms
+      gain x0.8          stable=True  min_zeta 0.64 growth -0.22/s
+      sensor 0.20        stable=True  min_zeta 0.55 growth -0.20/s
+      corner low         stable=False min_zeta 0.71 growth 0.03/s
+      gain x2.0          stable=True  min_zeta 0.23 growth -0.27/s
+      delay +12ms        stable=True  min_zeta 0.34 growth -0.27/s
+      lag x2             stable=True  min_zeta 0.54 growth -0.27/s
+      sensor 0.36        stable=True  min_zeta 0.49 growth -0.24/s
+      speed delay 10ms   stable=True  min_zeta 0.49 growth -0.27/s
+      corner high        stable=True  min_zeta 0.29 growth -0.20/s
+      corner high2       stable=True  min_zeta 0.30 growth -0.23/s
+== reference: artifacts/balance-legs-v5/actor.json
+   local gains: pitch 2766.1, rate -276.1, speed 2516.2, position 3434.2, integral -676.6, fwd_ref -832.7, yaw_rate 133.6, turn_ref -221.2, prev -0.378
+   measured-plant loop  f[Hz]  |Phi|  phase  |1-Phi|
+                           4.9   2.50      60   2.18
+                           6.4   2.17      53   1.76
+                           6.9   1.99      48   1.51
+                           7.5   1.77      43   1.24
+                           8.7   1.49      36   0.90
+                           9.8   1.41      31   0.76
+                          11.6   1.21      24   0.50
+                          13.9   0.97       2   0.05
+   sensitivity peak on measured plant: 22.07   max |Phi| above 8 Hz: 1.49

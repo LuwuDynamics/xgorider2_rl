@@ -1,0 +1,55 @@
+{
+  "random_samples": 4099,
+  "trajectory_samples": 15000,
+  "maximum_random_action_error": 2.560340526258642e-07,
+  "sb3_vs_native_wheel_error": 2.384185791015625e-07,
+  "masked_input_independence": 0.0,
+  "model_sha256": "2719c91c070968d03e164e76cf2c46a92f60d44e77e74337001939e36a8a6ff2",
+  "checkpoint_sha256": "014b3e7189de644dea60e451ec5063ee8eefd5f187de3f4d480bce62806e406b",
+  "weights_header_sha256": "3929ac158858e75f86a6792ea803f2b00ddb5dc6ae4d47d9a9ca9a11dcb22576",
+  "maximum_trajectory_action_error": 1.2742872390614224e-07,
+  "maximum_raw_observation_error": 7.510185241699219e-06,
+  "episodes": [
+    {
+      "domain": 0.0,
+      "seed": 3001,
+      "survived": true,
+      "elapsed": 15.0
+    },
+    {
+      "domain": 0.0,
+      "seed": 3017,
+      "survived": true,
+      "elapsed": 15.0
+    },
+    {
+      "domain": 0.0,
+      "seed": 3099,
+      "survived": true,
+      "elapsed": 15.0
+    },
+    {
+      "domain": 1.0,
+      "seed": 3001,
+      "survived": true,
+      "elapsed": 15.0
+    },
+    {
+      "domain": 1.0,
+      "seed": 3017,
+      "survived": true,
+      "elapsed": 15.0
+    },
+    {
+      "domain": 1.0,
+      "seed": 3099,
+      "survived": true,
+      "elapsed": 15.0
+    }
+  ],
+  "maximum_command_error_units": 1.52587890625e-05,
+  "maximum_yaw_integral_error": 3.725290298461914e-09,
+  "maximum_pos_integral_error": 1.6340727139185773e-06,
+  "check": "exported weights, native C++ float32 inference, Controller scheduling, observation construction, position/yaw integrals and per-tick rate limiting",
+  "mcu_timing_verified": false
+}

@@ -1,0 +1,63 @@
+<mujoco model="Rider2 equivalent wheel-leg model">
+  <compiler angle="radian" autolimits="true"/>
+  <option timestep="0.002" integrator="implicitfast" solver="Newton" iterations="20" gravity="0 0 -9.81"/>
+  <visual><global offwidth="1280" offheight="720"/><quality shadowsize="2048"/><headlight ambient=".4 .4 .4"/></visual>
+  <default>
+    <geom contype="1" conaffinity="2" friction=".9 .005 .0001" condim="3" solref=".008 1" solimp=".9 .95 .001"/>
+    <joint damping="0.0001" armature="0.000003"/>
+    <default class="visual"><geom contype="0" conaffinity="0" group="2"/></default>
+  </default>
+  <asset>
+    <texture name="floor" type="2d" builtin="checker" rgb1=".84 .86 .88" rgb2=".72 .75 .78" width="256" height="256"/>
+    <material name="floor" texture="floor" texrepeat="12 12" reflectance=".08"/>
+    <material name="shell" rgba=".16 .20 .24 1"/>
+    <material name="panel" rgba=".92 .94 .95 1"/>
+    <material name="tyre" rgba=".045 .05 .055 1"/>
+    <material name="metal" rgba=".42 .46 .50 1"/>
+  </asset>
+  <worldbody>
+    <light pos="0 -1 2" dir="0 .3 -1" diffuse=".8 .8 .8"/>
+    <geom name="ground" type="plane" size="8 8 .1" contype="2" conaffinity="1" material="floor"/>
+    <body name="base" pos="0 0 .1085">
+      <freejoint name="root"/>
+      <inertial pos=".001 0 -.006" mass=".42" diaginertia=".000269 .000371 .000465"/>
+      <geom name="chassis" type="box" size=".045 .036 .025" material="shell"/>
+      <geom class="visual" type="box" pos=".045 0 .004" size=".002 .031 .019" material="panel"/>
+      <geom class="visual" type="box" pos="0 0 .027" size=".034 .030 .003" material="panel"/>
+      <geom class="visual" type="box" pos=".047 0 .006" size=".001 .020 .012" rgba=".05 .14 .20 1"/>
+      <site name="imu" pos="0 0 -.005" size=".002"/>
+      <camera name="follow" mode="trackcom" pos=".42 -.48 .26" xyaxes=".75 .66 0 -.24 .28 .93"/>
+      <body name="leg12" pos="0 .0433 -.081">
+        <joint name="extension12" type="slide" axis="0 0 -1" range="-.018 .018" damping="1" armature=".0001"/>
+        <inertial pos="0 0 .028" mass=".025" diaginertia=".00001 .00001 .000001"/>
+        <geom class="visual" type="capsule" fromto="0 0 .008 0 0 .066" size=".004" material="metal"/>
+        <body name="wheel11">
+          <joint name="wheel11" type="hinge" axis="0 1 0" frictionloss=".00005"/>
+          <inertial pos="0 0 0" mass=".045" diaginertia=".0000116 .00002134 .0000116"/>
+          <geom name="tyre11" type="cylinder" size=".0308 .00785" zaxis="0 1 0" material="tyre"/>
+          <geom class="visual" type="cylinder" pos="0 .0095 0" size=".017 .001" zaxis="0 1 0" material="panel"/>
+          <geom class="visual" type="capsule" fromto="-.019 .011 0 .019 .011 0" size=".0015" material="metal"/>
+        </body>
+      </body>
+      <body name="leg22" pos="0 -.0433 -.081">
+        <joint name="extension22" type="slide" axis="0 0 -1" range="-.018 .018" damping="1" armature=".0001"/>
+        <inertial pos="0 0 .028" mass=".025" diaginertia=".00001 .00001 .000001"/>
+        <geom class="visual" type="capsule" fromto="0 0 .008 0 0 .066" size=".004" material="metal"/>
+        <body name="wheel21">
+          <joint name="wheel21" type="hinge" axis="0 1 0" frictionloss=".00005"/>
+          <inertial pos="0 0 0" mass=".045" diaginertia=".0000116 .00002134 .0000116"/>
+          <geom name="tyre21" type="cylinder" size=".0308 .00785" zaxis="0 1 0" material="tyre"/>
+          <geom class="visual" type="cylinder" pos="0 -.0095 0" size=".017 .001" zaxis="0 1 0" material="panel"/>
+          <geom class="visual" type="capsule" fromto="-.019 -.011 0 .019 -.011 0" size=".0015" material="metal"/>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="drive11" joint="wheel11" ctrlrange="-.2 .2"/>
+    <motor name="drive21" joint="wheel21" ctrlrange="-.2 .2"/>
+    <position name="leg12" joint="extension12" kp="1200" kv="5" ctrlrange="-.018 .018" forcerange="-15 15"/>
+    <position name="leg22" joint="extension22" kp="1200" kv="5" ctrlrange="-.018 .018" forcerange="-15 15"/>
+  </actuator>
+  <sensor><accelerometer name="accelerometer" site="imu"/><gyro name="gyro" site="imu"/></sensor>
+</mujoco>

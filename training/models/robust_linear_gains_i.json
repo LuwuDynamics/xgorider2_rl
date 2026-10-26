@@ -1,0 +1,109 @@
+{
+  "note": "Initialisation for train2.py: tools/design_linear.py --integral --speed-tau 0.12 (robust to +-gain/latency/sensor-scale stress on the identified plant AND to |1-Phi|>=0.4 on the measured real plant response with +-25% gain, +4 ms, wheel x0.65..1.5, +-20 deg wheel phase).",
+  "period": 0.006,
+  "speed_filter_tau": 0.12,
+  "gains": {
+    "pitch": 2155.8581398289643,
+    "pitch_rate_fw": -45.329771855990025,
+    "wheel_speed": 5679.718245252119,
+    "position": 761.7292113765602,
+    "position_integral": 166.39200687684266
+  },
+  "report": {
+    "nominal": {
+      "stable": true,
+      "growth": -0.33041707027193223,
+      "min_zeta": 0.5599240478459633
+    },
+    "gain x0.8": {
+      "stable": true,
+      "growth": -0.28369052770293246,
+      "min_zeta": 0.6439560458444387
+    },
+    "sensor 0.20": {
+      "stable": true,
+      "growth": -0.2447935259309794,
+      "min_zeta": 0.5614244307962197
+    },
+    "corner low": {
+      "stable": true,
+      "growth": -0.08000709086905745,
+      "min_zeta": 0.717495078411225
+    },
+    "gain x2.0": {
+      "stable": true,
+      "growth": -0.3494540633840184,
+      "min_zeta": 0.2500148139303952
+    },
+    "delay +12ms": {
+      "stable": true,
+      "growth": -0.331536226802061,
+      "min_zeta": 0.36111984554417526
+    },
+    "lag x2": {
+      "stable": true,
+      "growth": -0.3310881976049355,
+      "min_zeta": 0.5546242351270981
+    },
+    "sensor 0.36": {
+      "stable": true,
+      "growth": -0.30672056438566286,
+      "min_zeta": 0.29431110003642436
+    },
+    "speed delay 10ms": {
+      "stable": true,
+      "growth": -0.33175159139590854,
+      "min_zeta": 0.5006765341547117
+    },
+    "corner high": {
+      "stable": true,
+      "growth": -0.26385573175875404,
+      "min_zeta": 0.2846321702958866
+    },
+    "corner high2": {
+      "stable": true,
+      "growth": -0.292110243770884,
+      "min_zeta": 0.3177370992014419
+    },
+    "margins": {
+      "nominal": {
+        "stable": true,
+        "growth": -0.33041707027193223,
+        "worst_hz": 0.0,
+        "unstable_poles": [],
+        "min_zeta": 0.5599240478459633
+      },
+      "gain_up": 3.8359424936274533,
+      "gain_down": 0.4831390013569983,
+      "delay_margin": 0.068
+    },
+    "data_margin": [
+      0.6,
+      0.589,
+      0.641,
+      0.518,
+      0.748,
+      0.519,
+      0.429,
+      0.656
+    ],
+    "noise_std": {
+      "pitch_deg": 0.5993922624962817,
+      "speed_mm_s": 2.556972206993927,
+      "position_mm": 3.669741968619881,
+      "command_units": 29.62381453457552
+    }
+  },
+  "nominal_plant": {
+    "kt": 0.00018358124316252675,
+    "armature": 0.0,
+    "damping": 0.002,
+    "coulomb": 0.0,
+    "delay": 0.002,
+    "lag": 0.0072,
+    "speed_scale": 0.28,
+    "com_shift": 0.0,
+    "roll_resist": 0.0,
+    "imu_delay": 0.0025
+  }
+}

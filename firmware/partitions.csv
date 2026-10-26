@@ -1,0 +1,9 @@
+# The stock XGO-Rider2 partition table (the flasher refuses any device whose table differs). Two OTA slots of 0x180000 bytes;
+# 0x310000..0x32ffff is NOT a partition: the stock firmware keeps the leg zero points, the BLE name and the pitch trim there.
+# Name, Type, SubType, Offset, Size, Flags
+nvs, data, nvs, 0x9000, 0x5000,
+otadata, data, ota, 0xe000, 0x2000,
+app0, app, ota_0, 0x10000, 0x180000,
+app1, app, ota_1, 0x190000, 0x180000,
+spiffs, data, spiffs, 0x330000, 0xd0000,
+

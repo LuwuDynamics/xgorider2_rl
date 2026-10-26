@@ -1,0 +1,34 @@
+CAD display files of the XGO-Rider2
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+SPDX-License-Identifier: CC-BY-NC-4.0
+
+Files covered: everything in this directory (training/models/cad/):
+meshes/*.stl, meshes/provenance.json, rider_cad.xml, rider_measured_cad.xml,
+cad_inspection.json and README.md.
+
+These files are licensed under the Creative Commons Attribution-NonCommercial
+4.0 International license:
+
+    Summary:     https://creativecommons.org/licenses/by-nc/4.0/
+    Legal code:  https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+In short (this summary is not the license and not a substitute for it): you may
+copy, redistribute and adapt these files for NON-COMMERCIAL purposes, provided
+that you give appropriate credit (the manufacturer of the XGO-Rider2, with a
+link to this repository) and indicate whether you changed them. You may not use
+them for commercial purposes.
+
+They are published only to make simulation and training of the controller in
+this repository convenient. Nothing else in the repository depends on them; the
+rest of the repository is licensed under the Apache License, Version 2.0 (see
+../../../LICENSE). Delete this directory if you need a tree that is Apache-2.0
+only.
+
+The files are provided "as is", without warranties of any kind. Neither license
+grants any right to the names "XGO" and "XGO-Rider2".
+
+中文说明：本目录（training/models/cad/）里的所有文件，采用“知识共享 署名-非商业性使用
+4.0 国际”许可协议（CC BY-NC 4.0）。你可以为非商业目的复制、再分发和修改这些文件，
+但必须署名（XGO-Rider2 的厂家，并附本仓库链接）并说明是否做过修改；不得用于商业目的。
+这些文件只是为了方便大家仿真和训练；仓库其余部分采用 Apache License 2.0（见
+../../../LICENSE）。需要纯 Apache-2.0 的目录树时，删掉本目录即可。
