@@ -2,8 +2,8 @@
 
 | Language / 语言 | Landscape video / 横版视频 | Subtitles / 完整旁白字幕 |
 | --- | --- | --- |
-| English | [Watch · 52.4 seconds](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-en.mp4) | [English SRT](rider2-promo-en.srt) |
-| 简体中文 | [观看 · 56.1 秒](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-zh.mp4) | [中文 SRT](rider2-promo-zh.srt) |
+| English | [Watch · 52.4 seconds](https://github.com/user-attachments/assets/9aa9c877-29de-40f6-b7fa-de27c9a019c5) · [Download MP4](rider2-promo-en.mp4) | [English SRT](rider2-promo-en.srt) |
+| 简体中文 | [观看 · 56.1 秒](https://github.com/user-attachments/assets/876771ee-51a7-4132-a1f2-a8936fbff4b7) · [下载 MP4](rider2-promo-zh.mp4) | [中文 SRT](rider2-promo-zh.srt) |
 
 Both videos are 1920×1080, 30 fps, H.264 with AAC audio. The MP4s, covers, and subtitles are included in this directory for offline viewing. On-screen captions are condensed; the SRT files contain the full narration.
 

@@ -2,9 +2,11 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
-[![Watch the English project video](media/cover-en.png)](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-en.mp4)
+**English video · 52 seconds**
 
-**[▶ English video · 52 seconds](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-en.mp4)** · [中文视频 · 56 秒](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-zh.mp4)
+https://github.com/user-attachments/assets/9aa9c877-29de-40f6-b7fa-de27c9a019c5
+
+[Download MP4](media/rider2-promo-en.mp4) · [English subtitles](media/rider2-promo-en.srt) · [中文版](README.zh-CN.md)
 
 **A reinforcement-learning balance controller that runs on a stock ESP32.**
 A 1,796-parameter neural network, trained on a laptop CPU in MuJoCo, balances the wheel-legged robot **XGO-Rider2** on its original main board. An official open-source release by the manufacturer of the robot.

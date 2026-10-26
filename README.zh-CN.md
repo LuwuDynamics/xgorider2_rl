@@ -2,9 +2,11 @@
 
 [简体中文](README.zh-CN.md) · [English](README.md)
 
-[![点击观看中文版项目视频](media/cover-zh.png)](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-zh.mp4)
+**中文视频 · 56 秒**
 
-**[▶ 中文视频 · 56 秒](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-zh.mp4)** · [English video · 52 seconds](https://github.com/LuwuDynamics/xgorider2_rl/raw/refs/heads/main/media/rider2-promo-en.mp4)
+https://github.com/user-attachments/assets/876771ee-51a7-4132-a1f2-a8936fbff4b7
+
+[下载 MP4](media/rider2-promo-zh.mp4) · [中文完整字幕](media/rider2-promo-zh.srt) · [English](README.md)
 
 **在原装 ESP32 上运行的强化学习平衡控制器。**
 一个只有 1,796 个参数的神经网络，在笔记本 CPU 上用 MuJoCo 训练，让轮足机器人 **XGO-Rider2** 在它自己的主控板上站稳、听遥控、被推不倒。XGO-Rider2 厂家官方发布的开源项目。
